@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Major+Mono+Display&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  font-family: "Prompt", sans-serif;
+  font-weight: 100;
+
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    max-height: screen;
+    background: linear-gradient(135deg, #d66d6d, #4e085f);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    background-color: #fff;
+    width: 100%;
+    max-width: 540px;
+    margin: 20px auto;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight:1000;
+    color:rgb(62, 57, 57);
+}
+
+.todo h2 img {
+    width: 40PX; 
+    height: auto;
+    margin-left: 10px; 
+    object-fit: contain;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: #edeef0;
+  padding-left: 20px;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-weight: 400;
+  font-size: larger;
+  padding-left: 20px;
+}
+button{
+  border-radius: 40px;
+  background-color: #49be89;
+  outline: none;
+  border: none;
+  color:#fff ;
+  font-weight: 500;
+  padding: 14px 50px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0; 
+}
+
+ul li {
+  list-style: none; 
+  font-size: 17px;
+  font-weight: 300;
+  padding: 12px 8px 12px 50px; 
+  position: relative;
+  cursor: pointer;
+}
+.checked {
+  text-decoration: line-through;
+  color: grey;
+}
+
+ul li::before {
+   content: ''; 
+   position: absolute; 
+   height: 27px; 
+   width: 27px; 
+   background-image: url(image.png); 
+   background-size: contain;
+   top: 50%; 
+   transform: translateY(-50%); 
+   left: 18px; 
+}
+
+.checked::before{
+  background-image: url(checkbox_marked_circle_icon_137772.png);
+}
+ul li {
+  position: relative;
+  list-style: none;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  background-color: red;
+  height: 40px;
+  font-size: 40px;
+  font-weight:400 ; 
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.3s ease; 
+}
+
+ul li span:hover {
+  font-size: 70px; 
+}
